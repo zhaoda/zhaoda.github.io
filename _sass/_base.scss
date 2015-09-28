@@ -175,7 +175,7 @@ section {
     ul {
 
         li {
-            margin: 20px 0;
+            margin: 10px 0;
 
             a {
                 border: 0;
@@ -183,9 +183,29 @@ section {
                 display: inline-block;
                 box-sizing: border-box;
             }
+
+            small {
+                font-size: 0.8rem;
+                display: block;
+
+                span {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 768px) {
+                small {
+                    display: inline;
+
+                    span {
+                        padding: 0 .5rem;
+                        display: inline;
+                    }
+                }
+            }
+
         }
 
     }
-
 }
 

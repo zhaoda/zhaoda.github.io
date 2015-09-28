@@ -1,5 +1,6 @@
 # Site settings
-title:            赵达
+title:            赵达的个人网站 - Zhao Da's Personal Website
+name:             赵达
 email:            zd6437@gmail.com
 description:      我是一名前端开发工程师，这里是我的博客，记录一些学习笔记。
 baseurl:          ""
@@ -46,6 +47,7 @@ redcarpet:
     - no_intra_emphasis
     - autolink
     - strikethrough
+    - lax_spacing
     - fenced_code_blocks
     - tables
 

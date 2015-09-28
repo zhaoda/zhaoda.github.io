@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% elsif site.lang %}{{ site.lang }}{% else %}en{% endif %}">
-
   <head>
     {% include head.html %}
   </head>
-
   <body>
-
     {% include header.html %}
-
     <main>
       {{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}      
     </main>
-
     {% if page.path contains '_posts' %}
-
       {% if content contains 'reversefootnote' %}
         <aside class="note"></aside>
         <script async src="/assets/js/footnotes.js"></script>
       {% endif %}
-
     {% endif %}
-
+    {% include footer.html %}
   </body>
 </html>

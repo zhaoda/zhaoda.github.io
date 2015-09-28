@@ -1,16 +1,13 @@
 <aside class="logo">
-
   {% if page.url == '/index.html' or page.url == '/' %}
     {% assign link = '/about' %}
   {% else %}
     {% assign link = '/' %}
   {% endif %}
-
   <h1 class="avatar" href="{{ link }}">{{ site.title }}</h1>
   <ul>
-    <li><a href="/">首页</a></li>
-    <li><a href="/about">关于</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
     <li><a href="https://github.com/zhaoda/zhaoda.github.io" target="_blank">Fork</a></li>
   </ul>
-
 </aside>

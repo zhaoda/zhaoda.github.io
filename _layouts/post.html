@@ -4,23 +4,15 @@ layout: default
 
 <noscript>
   <style>
-
     article .footnotes {
       display: block;
     }
-
   </style>
 </noscript>
-
 <article class="typo">
-
   <h1>{{ page.title }}</h1>
-  <time>{{ page.date | date: '%B %-d, %Y' }}</time>
-
-  <hr hidden>
-
+  <p><small><time>{{ page.date | date: '%d %b %Y' }}</time></small></p>
   {{ content }}
-
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
@@ -36,5 +28,4 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 </article>
-
 <a href="/">返回</a>
