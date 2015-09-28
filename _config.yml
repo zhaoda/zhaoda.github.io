@@ -1,0 +1,56 @@
+# Site settings
+title:            赵达
+email:            zd6437@gmail.com
+description:      我是一名前端开发工程师，这里是我的博客，记录一些学习笔记。
+baseurl:          ""
+url:              "http://zhaoda.net"
+twitter_username: sage6437
+github_username:  zhaoda
+lang:             zh
+timezone:         Asia/Shanghai
+google_verify:    k9Sobn7a9wwRvlG0YV0L8f2wiguGMDSUNaqlgQd46Ro
+google_plus:      113279817760268675586
+
+# Handling Reading
+safe:         false
+encoding:     "utf-8"
+
+sass:
+    style: :compressed
+
+gems:
+    - jekyll-sitemap
+    - jekyll-feed
+
+exclude: ["README.md"]
+
+# Default layout
+defaults:
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+# Conversion
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
+    - tables
+
+excerpt_separator: "<!--more-->"
+
+
+
+
