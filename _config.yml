@@ -4,9 +4,10 @@ name:             赵达
 email:            zd6437@gmail.com
 description:      我是一名前端开发工程师，这里是我的博客，记录一些学习笔记。
 baseurl:          ""
-url:              "http://zhaoda.net"
+url:              http://zhaoda.net
 twitter_username: sage6437
 github_username:  zhaoda
+github_url:       https://github.com/zhaoda/zhaoda.github.io
 lang:             zh
 timezone:         Asia/Shanghai
 google_verify:    k9Sobn7a9wwRvlG0YV0L8f2wiguGMDSUNaqlgQd46Ro

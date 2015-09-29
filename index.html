@@ -2,21 +2,21 @@
 layout: default
 ---
 
-<h3>Blog Posts</h3>
+<h3>日志</h3>
 <section>
   <ul>
     {% for post in site.posts %}
       <li>
-        <small>{{ post.date | date: '%d %b %Y' }}<span>»</span></small><a href="{{ post.url }}">{{ post.title }}</a>
+        <small>{{ post.date | date: '%Y年%m月%d日' }}<span>»</span></small><a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
 </section>
-<h3>Projects</h3>
+<h3>开源项目</h3>
 <section>
   <ul>
-    <li><a href="https://github.com/zhaoda/spa" target="_blank">SPA : A webapp framework for routing control and view transitions </a></li>
-    <li><a href="https://github.com/zhaoda/spring" target="_blank">Spring : Spring is a blog engine written by GitHub Issues</a></li>
-    <li><a href="https://github.com/zhaoda/tinymce-upload" target="_blank">Tinymce-upload : a simple upload plugin for tinymce</a></li>
+    <li><a href="https://github.com/zhaoda/spa" target="_blank">SPA : 为构建WebApp设计的路由控制和视图转换框架</a></li>
+    <li><a href="https://github.com/zhaoda/spring" target="_blank">Spring : 一个通过GitHub Issues撰写内容的博客引擎</a></li>
+    <li><a href="https://github.com/zhaoda/tinymce-upload" target="_blank">Tinymce-upload : Tinymce编辑器的文件上传插件</a></li>
   </ul>
 </section>
