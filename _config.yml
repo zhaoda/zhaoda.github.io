@@ -41,6 +41,7 @@ defaults:
 
 # Conversion
 highlighter: pygments
+
 markdown: redcarpet
 redcarpet:
   extensions:
@@ -51,6 +52,12 @@ redcarpet:
     - lax_spacing
     - fenced_code_blocks
     - tables
+
+# markdown: kramdown
+# kramdown:
+#   input:         GFM
+#   auto_ids:      true
+#   auto_id_prefix: 'id-'
 
 excerpt_separator: "<!--more-->"
 
