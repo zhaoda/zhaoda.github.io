@@ -2,6 +2,7 @@
 <p>title: test classeur<br>
 date: 2015-10-15 00:00</p>
 <hr>
+<p><img src="https://i.imgur.com/yCF9zSo.jpg" alt="avatar"></p>
 <h1 id="my-first-file">My first file</h1>
 <p>Congratulations, you’re editing your first Classeur file!</p>
 <blockquote>
