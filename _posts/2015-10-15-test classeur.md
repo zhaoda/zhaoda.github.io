@@ -1,5 +1,7 @@
 <hr>
-<h2 id="filecontentpropertiesyaml">{{{file.content.propertiesYaml}}}</h2>
+<p>title: test classeur<br>
+date: 2015-10-15 00:00</p>
+<hr>
 <h1 id="my-first-file">My first file</h1>
 <p>Congratulations, you’re editing your first Classeur file!</p>
 <blockquote>
