@@ -1,6 +1,7 @@
 ---
 title: 微视 URI Scheme 介绍
 date: 2014-10-28 17:25
+tags: [scheme, 微视]
 ---
 
 [微视](http://www.weishi.com)APP统一资源标识符。

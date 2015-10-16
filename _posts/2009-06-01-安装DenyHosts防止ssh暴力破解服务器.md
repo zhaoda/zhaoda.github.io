@@ -1,6 +1,7 @@
 ---
 title: 安装DenyHosts防止ssh暴力破解服务器
 date: 2009-06-01 00:00
+tags: [denyhosts, ssh]
 ---
 
 DenyHosts是Python语言写的一个程序，它会分析sshd的日志文件（/var/log/secure），当发现重复的攻击时就会记录IP到/etc/hosts.deny文件，从而达到自动屏IP的功能。

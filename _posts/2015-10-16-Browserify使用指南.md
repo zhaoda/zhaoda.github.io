@@ -1,6 +1,7 @@
 ---
 title: Browserify使用指南
 date: 2015-10-16 14:28
+tags: [browserify, nodejs]
 ---
 
 ![browserify!](/assets/2015/browserify.png)
