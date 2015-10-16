@@ -361,10 +361,6 @@ $ browserify x.js y.js -p [ factor-bundle -o bundle/x.js -o bundle/y.js ] \
   > bundle/common.js
 ```
 
-For a list of plugins, consult the
-
-on npm.
-
 # 参考链接
 
 * [Browserify插件列表](https://www.npmjs.com/browse/keyword/browserify-plugin)
