@@ -366,5 +366,6 @@ $ browserify x.js y.js -p [ factor-bundle -o bundle/x.js -o bundle/y.js ] \
 * [Browserify插件列表](https://www.npmjs.com/browse/keyword/browserify-plugin)
 * [Browserify转换列表](https://github.com/substack/node-browserify/wiki/list-of-transforms)
 * [Browserify第三方工具](https://github.com/substack/node-browserify/wiki/browserify-tools)
+* [Browserify参考手册](https://github.com/substack/browserify-handbook)
 * [Browserify：浏览器加载Node.js模块](http://javascript.ruanyifeng.com/tool/browserify.html)
 * [通过Browserify在浏览器中使用NodeJS模块](https://www.ibm.com/developerworks/cn/web/1501_chengfu_browserify)
