@@ -16,6 +16,7 @@ google_plus:      113279817760268675586
 # Handling Reading
 safe:         false
 encoding:     "utf-8"
+permalink:    pretty
 
 sass:
     style: :compressed
