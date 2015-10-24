@@ -281,8 +281,6 @@ $ browserify -x ./robot.js boop.js > static/boop.js
 <script src="beep.js"></script>
 ```
 
-while the boop page can have:
-
 ``` html
 <!--boop.html-->
 <script src="common.js"></script>
