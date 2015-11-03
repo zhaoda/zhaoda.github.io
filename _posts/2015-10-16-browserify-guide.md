@@ -1,5 +1,5 @@
 ---
-title: Browserify使用指南
+title: Browserify 使用指南
 date: 2015-10-16 14:28
 tags: [browserify, nodejs]
 ---

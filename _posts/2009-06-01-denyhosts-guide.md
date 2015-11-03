@@ -1,5 +1,5 @@
 ---
-title: 安装DenyHosts防止ssh暴力破解服务器
+title: 安装 DenyHosts 防止 ssh 暴力破解服务器
 date: 2009-06-01 00:00
 tags: [denyhosts, ssh]
 ---

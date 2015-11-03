@@ -1,5 +1,5 @@
 ---
-title: AWS EC2挂载EBS
+title: AWS EC2 挂载 EBS
 date: 2011-01-01 00:00
 tags: [ec2, ebs]
 ---

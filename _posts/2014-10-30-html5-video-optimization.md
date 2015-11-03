@@ -1,5 +1,5 @@
 ---
-title: 移动端HTML5&lt;video>视频播放优化实践
+title: 移动端 HTML5 &lt;video> 视频播放优化实践
 date: 2014-10-30 22:59
 tags: [html5, video]
 ---

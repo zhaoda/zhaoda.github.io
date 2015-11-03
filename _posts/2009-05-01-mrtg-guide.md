@@ -1,5 +1,5 @@
 ---
-title: 安装配置MRTG监控服务
+title: 安装配置 MRTG 监控服务
 date: 2009-05-01 00:00
 tags: [mrtg]
 ---

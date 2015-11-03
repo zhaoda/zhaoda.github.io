@@ -1,5 +1,5 @@
 ---
-title: 使用Spring快速搭建博客
+title: 使用 Spring 快速搭建博客
 date: 2014-03-21 01:14
 tags: [spring blog]
 ---
