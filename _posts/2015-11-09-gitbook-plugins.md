@@ -246,5 +246,9 @@ $ gitbook install ./
 
 ##### [](https://plugins.gitbook.com/plugin/)
 
+## 开发插件
+
+最好先查看别人的插件是怎么做的，然后再看[官方文档](https://developer.gitbook.com/plugins/index.html)。
+
 
 
