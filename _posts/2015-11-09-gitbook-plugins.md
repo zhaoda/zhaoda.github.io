@@ -96,6 +96,10 @@ $ gitbook install ./
 
 ## 常用插件
 
+##### [ad](https://plugins.gitbook.com/plugin/ad)
+
+在每个页面顶部和底部添加广告或任何自定义内容。
+
 ##### [splitter](https://plugins.gitbook.com/plugin/splitter)
 
 在左侧目录和右侧内容之间添加一个可以拖拽的栏，用来调整两边的宽度。
