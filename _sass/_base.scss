@@ -170,7 +170,7 @@ article {
 
 }
 
-section {
+article.home {
 
     ul {
 
@@ -178,7 +178,6 @@ section {
             margin: 10px 0;
 
             a {
-                border: 0;
                 color: #000;
                 display: inline-block;
                 box-sizing: border-box;

@@ -13,31 +13,7 @@ layout: default
   <h1>{{ page.title }}</h1>
   <p><small><time>{{ page.date | date: '%Y年%m月%d日' }}</time></small></p>
   {{ content }}
-
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- 自适应高反差黑色 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9798300025848807"
-       data-ad-slot="8607007877"
-       data-ad-format="auto"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES * * */
-      var disqus_shortname = 'zhaoda';
-      
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
+  {% include ad.html %}
+  {% include disqus.html %}
 </article>
-<a href="/">返回</a>
+<a href="/">返回首页</a>
