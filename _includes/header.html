@@ -1,11 +1,8 @@
 <aside class="logo">
-  {% if page.url == '/index.html' or page.url == '/' %}
-    {% assign link = '/about' %}
-  {% else %}
-    {% assign link = '/' %}
-  {% endif %}
-  <h1 class="avatar" href="{{ link }}">{{ site.title }}</h1>
-  <!--ul>
-    <li><a href="/">日志</a></li>
-  </ul-->
+  <h1 class="avatar">{{ site.title }}</h1>
+  <ul>
+    {% if page.url != '/index.html' and page.url != '/' %}
+    <li><a href="/">返回首页</a></li>
+    {% endif %}
+  </ul>
 </aside>
