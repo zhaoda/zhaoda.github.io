@@ -20,7 +20,7 @@ $ <span class="token function">source</span> <span class="token operator">&lt;</
 </span></code></pre>
 <p>修改 <code>my.cnf</code> 中的 <code>datadir</code> 切换数据库的存储位置。</p>
 <p><a href="https://gist.github.com/mralexho/6cd3cf8b2ebbd4f33165">https://gist.github.com/mralexho/6cd3cf8b2ebbd4f33165</a></p>
-<h2 id="查找本地-my.cnf">查找本地 my.cnf</h2>
+<h2 id="查找本地-my.cnf-位置">查找本地 my.cnf 位置</h2>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">sudo</span> <span class="token operator">/</span>usr<span class="token operator">/</span>libexec<span class="token operator">/</span><span class="token function">locate</span><span class="token punctuation">.</span>updatedb
 <span class="token comment" spellcheck="true"># 可能要等待几分钟，然后继续
 </span><span class="token function">locate</span> my<span class="token punctuation">.</span>cnf
