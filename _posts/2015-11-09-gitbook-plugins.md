@@ -61,7 +61,7 @@ Gitbook 本身功能丰富，但同时可以使用插件来进行个性化定制
   "plugins": [
     "disqus",
     "github",
-    "edit-link",
+    "editlink",
     "prism",
     "-highlight",
     "baidu",
@@ -75,7 +75,7 @@ Gitbook 本身功能丰富，但同时可以使用插件来进行个性化定制
     "github": {
       "url": "https://github.com/zhaoda/webpack-handbook"
     },
-    "edit-link": {
+    "editlink": {
       "base": "https://github.com/zhaoda/webpack-handbook/blob/master/content",
       "label": "编辑本页"
     },
@@ -96,6 +96,10 @@ $ gitbook install ./
 
 ## 常用插件
 
+##### [editlink](https://plugins.gitbook.com/plugin/editlink)
+
+内容顶部显示 `编辑本页` 链接。
+
 ##### [ad](https://plugins.gitbook.com/plugin/ad)
 
 在每个页面顶部和底部添加广告或任何自定义内容。
@@ -115,10 +119,6 @@ $ gitbook install ./
 ##### [anchors](https://plugins.gitbook.com/plugin/anchors)
 
 标题带有 github 样式的锚点。
-
-##### [edit-link](https://plugins.gitbook.com/plugin/edit-link)
-
-内容顶部显示 `编辑本页` 链接。
 
 ##### [chart](https://plugins.gitbook.com/plugin/chart)
 
