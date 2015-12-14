@@ -8,7 +8,7 @@ tags: [browserify, nodejs]
 
 # 让浏览器加载Nodejs模块
 
-目前[NPM](https://www.npmjs.com/)上有两万多个[NodeJS](http://nodejs.org)模块，它们都是通过CMD的方式打包的，除了特定的可以使用CMD模块加载器加载的模块，大部分nodejs模块无法直接使用到浏览器环境中。
+目前[NPM](https://www.npmjs.com/)上有二十多万个[NodeJS](http://nodejs.org)模块，它们都是通过CMD的方式打包的，除了特定的可以使用CMD模块加载器加载的模块，大部分nodejs模块无法直接使用到浏览器环境中。
 
 [Browserify](http://browserify.org/)是一个供浏览器环境使用的模块打包工具，像在node环境一样，也是通过`require('modules')`来组织模块之间的引用和依赖，既可以引用npm中的模块，也可以引用自己写的模块，然后打包成js文件，再在页面中通过`<script>`标签加载。
 
