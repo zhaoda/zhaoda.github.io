@@ -351,3 +351,4 @@ wifi | 1000kbps | 2.86 | 3.97 | 5.85 | 8.69
 - W3C video 标准 http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element
 - 如何在iOS7+的webview中内联播放视频 http://darktalker.com/2014/play-video-inline-iphone-ios7
 - 视频事件流水查看工具 http://z.weishi.qq.com/app/video.html
+- HTML5 VIDEO bytes on iOS http://www.stevesouders.com/blog/2013/04/21/html5-video-bytes-on-ios
