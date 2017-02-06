@@ -1,6 +1,6 @@
 ---
 title: 微视 URI Scheme 介绍
-date: 2014-10-28 17:25
+date: 2014-10-28 17:25:00 +0800
 tags: [scheme, 微视]
 ---
 

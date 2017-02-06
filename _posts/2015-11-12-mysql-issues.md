@@ -1,6 +1,6 @@
 ---
 title: MySQL 常见问题汇总
-date: 2015-11-12 20:00
+date: 2015-11-12 20:00:00 +0800
 tags: [mysql, issue]
 ---
 

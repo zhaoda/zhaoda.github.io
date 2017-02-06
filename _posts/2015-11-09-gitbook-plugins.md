@@ -1,6 +1,6 @@
 ---
 title: Gitbook 的使用和常用插件
-date: 2015-11-09 17:30
+date: 2015-11-09 17:30:00 +0800
 tags: [gitbook, plugin]
 ---
 

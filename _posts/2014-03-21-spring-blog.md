@@ -1,6 +1,6 @@
 ---
 title: 使用 Spring 快速搭建博客
-date: 2014-03-21 01:14
+date: 2014-03-21 01:14:00 +0800
 tags: [spring blog]
 ---
 

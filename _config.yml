@@ -41,24 +41,12 @@ defaults:
       layout: "post"
 
 # Conversion
-highlighter: pygments
+highlighter: rouge
 
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - lax_spacing
-    - fenced_code_blocks
-    - tables
-
-# markdown: kramdown
-# kramdown:
-#   input:         GFM
-#   auto_ids:      true
-#   auto_id_prefix: 'id-'
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
 
 excerpt_separator: "<!--more-->"
 

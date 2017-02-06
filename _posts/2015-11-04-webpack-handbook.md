@@ -1,6 +1,6 @@
 ---
 title: Webpack 中文指南
-date: 2015-11-04 00:26
+date: 2015-11-04 00:26:00 +0800
 tags: [webpack]
 ---
 

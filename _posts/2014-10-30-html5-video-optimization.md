@@ -1,6 +1,6 @@
 ---
 title: 移动端 HTML5 &lt;video> 视频播放优化实践
-date: 2014-10-30 22:59
+date: 2014-10-30 22:59:00 +0800
 tags: [html5, video]
 ---
 
@@ -118,7 +118,6 @@ wifi | 0.986921 | 0.550208 | 0.444332 | 70.8728
 
 event | iOS | Android
 ----- | ----- | -----
-****************** | *********************************************** | ***********************************************
 play | 只是要播放视频，响应的是video.play()方法，并不代表已经开始播放 | 和iOS一样，仅是响应video.play()方法
 durationchange | 会执行一次，一定会获取到视频的duration | 可能会执行多次，只有最后一次才能获取到真实的duration，前面的duration都是0；但低版本Android可能获取到的duration是0或1；（本文提到的低版本Android大部分是4.1以下）
 canplay | 可以认为是视频元素没有问题，可以运行，没有更多含义了，基本用不上 | 同iOS
@@ -133,7 +132,6 @@ stalled | 网络状况不佳，导致视频下载中断；| 在没有play之前�
 
 attributes | iOS | android
 ----- | ----- | -----
-****************** | *********************************************** | ***********************************************
 poster<br/>封面图片 | 支持，但是加载速度明显比在\<img\>中要慢；| 不一定支持（浏览器厂商的实现标准不统一）；
 preload<br/>预加载 | iPhone不支持；| 可能支持；
 autoplay<br/>自动播放 | iPhone Safari中不支持，但在webview中可能被开启；iOS开发文档明确说明蜂窝网络下不允许autoplay；| 可能支持；
@@ -145,7 +143,6 @@ width和height | 一定给出明确的属性设置，切不能为0；| 如果不
 
 iOS | android
 -------- | --------
-********************************************************* | *********************************************************
 物理位置覆盖在\<video\>区域上的元素，click和touch等事件会失效，比如一个\<a\>链接如果覆盖在\<video\>上，那么点击后没有任何效果。| -
 iOS8.0+中，单页面播放视频超过16个，再播放的视频全部MediaError解码异常无法播放。| - 
 iPhone的Safari会弹出一个全屏的播放器来播放视频，iPad则支持内联播放。iOS7+ 如果webview（比如微信）开启了`webview.allowsInlineMediaPlayback = YES;`，可以通过设置`webkit-playsinline`属性支持内联播放；| 支持内联播放，但某些厂商会用自己的播放器劫持原生的视频播放；
@@ -268,10 +265,10 @@ $(video).one('loadeddata', function() {
     var width = $(video).parent().width()
 
     // 下载完了，开始播放吧
-    $(video).attr{
+    $(video).attr({
       width: width,
       height: width
-    }
+    })
     video.play()
 
     clearInterval(timer)
@@ -347,8 +344,8 @@ wifi | 1000kbps | 2.86 | 3.97 | 5.85 | 8.69
 
 # 参考资料
 
-- HTML5 Video Events and API检测工具 http://www.w3.org/2010/05/video/mediaevents.html
-- W3C video 标准 http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element
-- 如何在iOS7+的webview中内联播放视频 http://darktalker.com/2014/play-video-inline-iphone-ios7
-- 视频事件流水查看工具 http://z.weishi.qq.com/app/video.html
-- HTML5 VIDEO bytes on iOS http://www.stevesouders.com/blog/2013/04/21/html5-video-bytes-on-ios
+- HTML5 Video Events and API检测工具 <http://www.w3.org/2010/05/video/mediaevents.html>
+- W3C video 标准 <http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element>
+- 如何在iOS7+的webview中内联播放视频 <http://darktalker.com/2014/play-video-inline-iphone-ios7>
+- 视频事件流水查看工具 <http://z.weishi.qq.com/app/video.html>
+- HTML5 VIDEO bytes on iOS <http://www.stevesouders.com/blog/2013/04/21/html5-video-bytes-on-ios>
