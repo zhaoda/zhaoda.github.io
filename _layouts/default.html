@@ -2,6 +2,8 @@
 <html lang="{% if page.lang %}{{ page.lang }}{% elsif site.lang %}{{ site.lang }}{% else %}en{% endif %}">
   <head>
     {% include head.html %}
+    {% seo %}
+    {% feed_meta %}
   </head>
   <body>
     {% include header.html %}

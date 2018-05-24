@@ -2,6 +2,7 @@
 title: 安装配置 MRTG 监控服务
 date: 2009-05-01 00:00:00 +0800
 tags: [mrtg]
+description: Multi Router Traffic Grapher - MRTG是一个监控网络链路流量负载的工具软件，通过snmp协议得到设备的流量信息，并将流量负载以包含PNG格式的图形的HTML文档方式显示给用户，以非常直观的形式显示流量负载。
 ---
 
 Multi Router Traffic Grapher - MRTG是一个监控网络链路流量负载的工具软件，通过snmp协议得到设备的流量信息，并将流量负载以包含PNG格式的图形的HTML文档方式显示给用户，以非常直观的形式显示流量负载。

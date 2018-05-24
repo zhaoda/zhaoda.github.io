@@ -2,6 +2,7 @@
 title: 使用 Spring 快速搭建博客
 date: 2014-03-21 01:14:00 +0800
 tags: [spring blog]
+description: Spring是一个通过GitHub Issues撰写内容的博客引擎，或者说是一个简单、静态化的建站系统。不需要服务器和数据库支持，你可以把它作为一个GitHub代码仓库，并托管在免费的GitHub Pages上运行，然后在这个仓库的Issues系统里撰写日志。
 ---
 
 ## 关于Spring

@@ -2,6 +2,7 @@
 title: CentOS 7.5 + PHP 5.6.36 + Nginx 1.14.0 配置笔记
 date: 2018-05-22 23:00:00 +0800
 tags: [centos, php, nginx, linux]
+description: 2018 年最新 CentOS 7.5 + PHP 5.6.36 + Nginx 1.14.0 配置笔记
 ---
 
 ## 创建用户、组和目录

@@ -1,6 +1,7 @@
 # Site settings
 title:            赵达的个人网站 - Zhao Da's Personal Website
 name:             赵达
+logo:             /assets/image/avatar.jpg
 email:            zd6437@gmail.com
 description:      我目前就职于腾讯，是一名全栈开发工程师。
 baseurl:          ""
@@ -10,8 +11,21 @@ github_username:  zhaoda
 github_url:       https://github.com/zhaoda/zhaoda.github.io
 lang:             zh
 timezone:         Asia/Shanghai
-google_verify:    k9Sobn7a9wwRvlG0YV0L8f2wiguGMDSUNaqlgQd46Ro
-google_plus:      113279817760268675586
+google_site_verification:    k9Sobn7a9wwRvlG0YV0L8f2wiguGMDSUNaqlgQd46Ro
+author:
+  twitter: sage6437
+twitter:
+  username: sage6437
+  card: summary
+social:
+  name: 赵达
+  links:
+    - https://twitter.com/sage6437
+    - https://www.facebook.com/sage6437
+    - https://plus.google.com/113279817760268675586
+    - https://github.com/zhaoda
+    - https://weibo.com/sage
+    - http://t.qq.com/zd6437
 
 # Handling Reading
 safe:         false
@@ -23,7 +37,12 @@ sass:
 
 plugins:
     - jekyll-sitemap
+    - jekyll-seo-tag
     - jekyll-feed
+    - jekyll-redirect-from
+    - jemoji
+    - jekyll-mentions
+    - jekyll-avatar
 
 exclude: ["README.md"]
 

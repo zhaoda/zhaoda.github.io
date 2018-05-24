@@ -1,7 +1,9 @@
 <aside class="logo">
   <h1 class="avatar">{{ site.title }}</h1>
   <ul>
-    {% if page.url != '/index.html' and page.url != '/' %}
+    {% if page.url == '/index.html' or page.url == '/' %}
+    <li><a href="/">{{ site.name }} Blog</a></li>
+    {% else if %}
     <li><a href="/">返回首页</a></li>
     {% endif %}
   </ul>

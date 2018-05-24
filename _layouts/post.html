@@ -11,7 +11,7 @@ layout: default
 </noscript>
 <article class="typo">
   <h1>{{ page.title }}</h1>
-  <p><small><time>{{ page.date | date: '%Y年%m月%d日' }}</time></small></p>
+  <p><address><a href="/">{{ site.name }}</a></address> <small><time>{{ page.date | date: '%Y年%m月%d日' }}</time></small></p>
   {{ content }}
   {% include ad.html %}
   {% include disqus.html %}
