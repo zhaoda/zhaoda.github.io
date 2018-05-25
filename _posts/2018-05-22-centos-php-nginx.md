@@ -226,8 +226,8 @@ extension_dir = "/usr/local/webserver/php/lib/php/extensions/no-debug-non-zts-20
 [apcu]
 extension = "apcu.so"
 apc.enabled = on
-apc.shm_size = 256M
-apc.enable_cli = on
+apc.shm_size = 128M
+; apc.enable_cli = on
 [memcached]
 extension = "memcached.so"
 [imagick]
@@ -235,12 +235,13 @@ extension = "imagick.so"
 [opcache]
 zend_extension="opcache.so"
 opcache.enable=1
-opcache.memory_consumption=128
-opcache.interned_strings_buffer=8
-opcache.max_accelerated_files=4000
-opcache.revalidate_freq=60
-opcache.fast_shutdown=1
-opcache.enable_cli=1
+; 具体参数配置根据实际情况，默认不配置
+; opcache.memory_consumption=128
+; opcache.interned_strings_buffer=8
+; opcache.max_accelerated_files=4000
+; opcache.revalidate_freq=60
+; opcache.fast_shutdown=1
+; opcache.enable_cli=1
 ```
 
 ## 修改 php-fpm.conf 配置文件
