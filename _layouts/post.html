@@ -13,6 +13,7 @@ layout: default
   <h1>{{ page.title }}</h1>
   <p><address><a href="/">{{ site.name }}</a></address> <small><time>{{ page.date | date: '%Y年%m月%d日' }}</time></small></p>
   {{ content }}
+  {% include ad.html %}
   {% include disqus.html %}
 </article>
 <a href="/">返回首页</a>
