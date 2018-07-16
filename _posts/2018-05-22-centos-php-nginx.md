@@ -35,7 +35,7 @@ yum remove httpd
 yum remove php
 yum remove mysql
 
-# 升级所有软件包
+# 升级所有软件包
 yum update -y
 
 # 安装可能用到的软件包，大部分其实已经内置在系统中
@@ -69,7 +69,7 @@ yum update -y
 yum -y install gcc gcc-c++ autoconf libjpeg-turbo-static libjpeg-turbo-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel pcre pcre-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5-libs krb5-devel libidn libidn-devel openssl openssl-devel openldap openldap-devel nss-pam-ldapd openldap-clients openldap-servers bison lrzsz libmcrypt libmcrypt-devel mcrypt mhash ImageMagick ImageMagick-devel libmemcached libmemcached-devel
 ```
 
-## 安装其他 PHP 依赖库
+## 安装其他 PHP 依赖库
 
 ```bash
 # libiconv：提供了一个iconv()的函数，以实现一个字符编码到另一个字符编码的转换
