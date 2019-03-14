@@ -3,7 +3,7 @@ title:            赵达的个人网站 - Zhao Da's Personal Website
 name:             赵达
 logo:             /assets/image/avatar.jpg
 email:            zd6437@gmail.com
-description:      我目前就职于腾讯，是一名全栈开发工程师。
+description:      一名程序员，就职于腾讯
 baseurl:          ""
 url:              https://zhaoda.net
 twitter_username: sage6437
@@ -22,10 +22,8 @@ social:
   links:
     - https://twitter.com/sage6437
     - https://www.facebook.com/sage6437
-    - https://plus.google.com/113279817760268675586
     - https://github.com/zhaoda
     - https://weibo.com/sage
-    - http://t.qq.com/zd6437
 
 # Handling Reading
 safe:         false
