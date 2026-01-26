@@ -12,7 +12,7 @@ layout: default
     {% endfor %}
   </ul>
   <h1>关于我</h1>
-  <p>后厂村赵师傅</p>
+  <p>{{ site.description }}</p>
   <h4>链接</h4>
   <ul>
     <li><a href="https://github.com/zhaoda" target="_blank">GitHub</a></li>
@@ -20,7 +20,7 @@ layout: default
   </ul>
   <h4>邮箱</h4>
   <p>
-    <a href="mailto:zd6437@gmail.com">zd6437@gmail.com</a>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
   </p>
   {% include ad.html %}
 </article>
