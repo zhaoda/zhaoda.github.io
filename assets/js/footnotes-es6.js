@@ -46,7 +46,7 @@ class Footnotes {
 			this.closeNote( me );
 		}.bind( this ));
 
-		popup.innerHTML = me.getAttribute( 'data-note' );
+		popup.textContent = me.getAttribute( 'data-note' );
 
 		setTimeout( function() {
 
@@ -74,7 +74,7 @@ class Footnotes {
 	spawnPlacebo( note, ref, id ) {
 
 		var placebo = document.createElement( 'span' ),
-			content = note.children[0].innerHTML,
+			content = note.children[0].textContent,
 			it = this;
 
 		placebo.setAttribute( 'data-note', content );
