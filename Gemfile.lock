@@ -68,7 +68,7 @@ GEM
       webrick (~> 1.7)
     jekyll-avatar (0.8.0)
       jekyll (>= 3.0, < 5.0)
-    jekyll-feed (0.17.0)
+    jekyll-feed (0.18.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
