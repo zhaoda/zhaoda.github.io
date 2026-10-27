@@ -1,10 +1,14 @@
-<aside class="logo">
-  <h1 class="avatar">{{ site.title }}</h1>
-  <ul>
-    {% if page.url == '/index.html' or page.url == '/' %}
-    <li><a href="/">{{ site.name }} Blog</a></li>
-    {% else if %}
-    <li><a href="/">返回首页</a></li>
-    {% endif %}
-  </ul>
-</aside>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="/">{{ site.name }}的个人网站</a>
+    <nav class="site-nav" aria-label="主导航">
+      <ul>
+        <li><a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>首页</a></li>
+        <li><a href="/about/" {% if page.url == '/about/' %}aria-current="page"{% endif %}>关于</a></li>
+        <li><a href="/labs/" {% if page.url == '/labs/' %}aria-current="page"{% endif %}>实验室</a></li>
+        <li><a href="/tags/" {% if page.url == '/tags/' %}aria-current="page"{% endif %}>标签</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
