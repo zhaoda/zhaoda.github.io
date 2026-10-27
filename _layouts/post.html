@@ -9,11 +9,30 @@ layout: default
     }
   </style>
 </noscript>
-<article class="typo">
-  <h1>{{ page.title }}</h1>
-  <p><address><a href="/">{{ site.name }}</a></address> <small><time>{{ page.date | date: '%Y年%m月%d日' }}</time></small></p>
-  {{ content }}
-  {% include ad.html %}
-  {% include disqus.html %}
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%Y年%m月%d日' }}</time>
+      {% assign chars = content | strip_html | strip_newlines | size %}
+      {% assign minutes = chars | divided_by: 400 | plus: 1 %}
+      <span aria-hidden="true"> · </span>约 {{ minutes }} 分钟
+      <span aria-hidden="true"> · </span><a href="/" itemprop="author">{{ site.name }}</a>
+    </p>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    {% if page.tags and page.tags.size > 0 %}
+    <ul class="post-tags" aria-label="标签">
+      {% for tag in page.tags %}
+      <li><a href="/tags/#{{ tag | cgi_escape }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </header>
+  <div class="post-body" itemprop="articleBody">
+    {{ content }}
+  </div>
+  <footer class="post-footer">
+    {% include ad.html %}
+    {% include disqus.html %}
+    <a class="back-home" href="/">← 返回首页</a>
+  </footer>
 </article>
-<a href="/">返回首页</a>
