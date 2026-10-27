@@ -1,5 +1,4 @@
 ---
-layout: null
 permalink: /llms.txt
 ---
 # 赵达的个人网站
