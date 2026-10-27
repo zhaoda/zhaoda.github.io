@@ -4,18 +4,18 @@
    高端简约、排版优先、移动优先、深色模式、AI 友好 */
 
 :root {
-  --bg: #fbfaf7;
+  --bg: #fafaf9;
   --surface: #ffffff;
-  --text: #1d1b19;
-  --text-2: #6f6a63;
-  --text-3: #a39d93;
-  --line: #e8e3da;
-  --line-strong: #d8d2c7;
+  --text: #161513;
+  --text-2: #6a6a66;
+  --text-3: #a3a3a0;
+  --line: #e7e7e3;
+  --line-strong: #d5d5d0;
   --accent: #1d5c4d;
   --accent-hover: #14463b;
-  --accent-soft: #edf3f0;
-  --code-bg: #f4f2ec;
-  --ad-bg: #f4f2ed;
+  --accent-soft: #eef2f0;
+  --code-bg: #f4f4f2;
+  --ad-bg: #f4f4f2;
   --shadow: 0 1px 2px rgba(28, 25, 20, .05), 0 8px 24px rgba(28, 25, 20, .06);
   --radius: 14px;
   --measure: 46rem;
@@ -25,18 +25,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #171512;
-    --surface: #201e1b;
-    --text: #e8e4dc;
-    --text-2: #a8a29a;
-    --text-3: #767169;
-    --line: #2e2b27;
-    --line-strong: #3d3933;
+    --bg: #0f0e0d;
+    --surface: #181716;
+    --text: #eceae6;
+    --text-2: #a3a3a0;
+    --text-3: #6e6e6b;
+    --line: #262624;
+    --line-strong: #3a3a37;
     --accent: #7fbfa9;
     --accent-hover: #9fd4c1;
-    --accent-soft: #22332e;
-    --code-bg: #221f1c;
-    --ad-bg: #221f1c;
+    --accent-soft: #1e2b26;
+    --code-bg: #1c1b1a;
+    --ad-bg: #1c1b1a;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .3);
   }
 }
@@ -165,8 +165,10 @@ video {
 }
 
 .site-nav a {
+  font-family: var(--font-mono);
   color: var(--text-2);
-  font-size: .95rem;
+  font-size: .85rem;
+  letter-spacing: .08em;
 }
 
 .site-nav a:hover,
@@ -176,33 +178,32 @@ video {
 
 /* 主体 */
 main.wrap {
-  padding-top: 2.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
 }
 
 /* 首页 hero */
 .hero {
-  padding: 2rem 0 3rem;
+  padding: 3rem 0 4rem;
   border-bottom: 1px solid var(--line);
-  margin-bottom: 2.5rem;
-  background: radial-gradient(ellipse 40rem 20rem at 15% 0, var(--accent-soft), transparent 70%);
+  margin-bottom: 3rem;
 }
 
 .hero-eyebrow {
   font-family: var(--font-mono);
-  font-size: .8rem;
-  letter-spacing: .22em;
+  font-size: .75rem;
+  letter-spacing: .25em;
   text-transform: uppercase;
   color: var(--accent);
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
 }
 
 .hero h1 {
-  font-size: clamp(2.1rem, 6vw, 3.1rem);
+  font-size: clamp(2.4rem, 7vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -.02em;
-  margin: 0 0 1rem;
+  line-height: 1.15;
+  letter-spacing: -.03em;
+  margin: 0 0 1.25rem;
 }
 
 .hero p {
@@ -214,9 +215,9 @@ main.wrap {
 
 .section-title {
   font-family: var(--font-mono);
-  font-size: .8rem;
+  font-size: .75rem;
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--text-3);
   margin: 0 0 .5rem;
@@ -233,7 +234,7 @@ main.wrap {
 .post-list li {
   counter-increment: post;
   position: relative;
-  padding: 1.3rem 0 1.3rem 3rem;
+  padding: 1.6rem 0 1.6rem 3rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -241,7 +242,7 @@ main.wrap {
   content: counter(post, decimal-leading-zero);
   position: absolute;
   left: 0;
-  top: 1.45rem;
+  top: 1.75rem;
   font-family: var(--font-mono);
   font-size: .85rem;
   color: var(--text-3);
@@ -252,8 +253,8 @@ main.wrap {
 }
 
 .post-list h3 {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  line-height: 1.45;
   margin: 0 0 .3rem;
 }
 
@@ -290,9 +291,9 @@ main.wrap {
 }
 
 .post-header h1 {
-  font-size: clamp(1.7rem, 5vw, 2.4rem);
-  line-height: 1.3;
-  letter-spacing: -.01em;
+  font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+  line-height: 1.25;
+  letter-spacing: -.02em;
   margin: .5rem 0 0;
 }
 
@@ -591,11 +592,11 @@ pre code {
   }
 
   main.wrap {
-    padding-top: 1.75rem;
+    padding-top: 2.25rem;
   }
 
   .hero {
-    padding: 1.25rem 0 2rem;
+    padding: 1.5rem 0 2.5rem;
   }
 
   .post-list li {
