@@ -2,25 +2,42 @@
 layout: default
 ---
 
-<article class="typo home">
-  <h1>日志</h1>
-  <ul>
+<section class="hero">
+  <h1>{{ site.name }}的个人网站</h1>
+  <p>{{ site.description }}。这里记录 AI、AI Agent 与编程工具的实战思考，每日一篇。</p>
+</section>
+
+<section aria-labelledby="latest-heading">
+  <h2 class="section-title" id="latest-heading">最新文章</h2>
+  <ol class="post-list">
     {% for post in site.posts %}
-      <li data-tags="{{ post.tags | jsonify | cgi_escape}}">
-        <a href="{{ post.url }}">{{ post.title }}</a><small><span>-</span>{{ post.date | date: '%Y年%m月%d日' }}</small>
+      <li>
+        <article>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y年%m月%d日' }}</time></p>
+          {% assign desc = post.description | default: post.excerpt %}
+          {% if desc %}
+          <p class="post-desc">{{ desc | strip_html | strip_newlines | truncate: 90 }}</p>
+          {% endif %}
+        </article>
       </li>
     {% endfor %}
-  </ul>
-  <h1>关于我</h1>
+  </ol>
+</section>
+
+<section aria-labelledby="about-heading">
+  <h2 class="section-title" id="about-heading">关于</h2>
   <p>{{ site.description }}</p>
-  <h4>链接</h4>
+  <h3>链接</h3>
   <ul>
-    <li><a href="https://github.com/zhaoda" target="_blank">GitHub</a></li>
-    <li><a href="/labs">实验室</a></li>
+    <li><a href="https://github.com/zhaoda" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="/labs/">实验室</a></li>
+    <li><a href="/tags/">标签</a></li>
   </ul>
-  <h4>邮箱</h4>
+  <h3>邮箱</h3>
   <p>
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
   </p>
-  {% include ad.html %}
-</article>
+</section>
+
+{% include ad.html %}
