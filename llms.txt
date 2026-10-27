@@ -15,5 +15,5 @@ permalink: /llms.txt
 
 ## 最新文章
 
-{% for post in site.posts limit 30 %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+{% for post in site.posts limit:30 %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 120 }}
 {% endfor %}
