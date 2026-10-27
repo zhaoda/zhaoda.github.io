@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# 赵达的个人网站
+
+> 一名程序员的个人博客，记录 AI、AI Agent 与编程工具的实战思考，每日一篇。内容采用知识共享署名-非商业性使用 4.0 国际许可协议（CC BY-NC 4.0）。
+
+## 主要页面
+
+- [首页]({{ site.url }}/)
+- [关于]({{ site.url }}/about/)
+- [实验室]({{ site.url }}/labs/)
+- [标签]({{ site.url }}/tags/)
+- [RSS 订阅]({{ site.url }}/feed.xml)
+
+## 最新文章
+
+{% for post in site.posts limit 30 %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+{% endfor %}
