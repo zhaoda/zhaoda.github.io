@@ -175,7 +175,7 @@ main.wrap {
 }
 
 .hero h1 {
-  font-size: clamp(1.9rem, 1rem + 3vw, 2.6rem);
+  font-size: clamp(1.9rem, 5.4vw, 2.6rem);
   line-height: 1.25;
   letter-spacing: -.01em;
   margin: 0 0 .75rem;
@@ -247,7 +247,7 @@ main.wrap {
 }
 
 .post-header h1 {
-  font-size: clamp(1.7rem, 1rem + 2.6vw, 2.4rem);
+  font-size: clamp(1.7rem, 5vw, 2.4rem);
   line-height: 1.3;
   letter-spacing: -.01em;
   margin: .5rem 0 0;
@@ -438,7 +438,7 @@ pre code {
   bottom: 0;
   left: 0;
   transition: transform .6s ease;
-  transform: translateY(calc(100% + 8px));
+  transform: translateY(#{'calc(100% + 8px)'});
   font-size: 14px;
   line-height: 1.7em;
   width: 100%;
