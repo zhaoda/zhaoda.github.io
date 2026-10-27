@@ -187,6 +187,18 @@ main.wrap {
   padding: 3rem 0 4rem;
   border-bottom: 1px solid var(--line);
   margin-bottom: 3rem;
+  background-image:
+    linear-gradient(rgba(29, 92, 77, .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(29, 92, 77, .06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(127, 191, 169, .08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(127, 191, 169, .08) 1px, transparent 1px);
+  }
 }
 
 .hero-eyebrow {
@@ -206,11 +218,32 @@ main.wrap {
   margin: 0 0 1.25rem;
 }
 
+.cursor {
+  color: var(--accent);
+  font-size: .5em;
+  margin-left: .08em;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .hero p {
   color: var(--text-2);
   font-size: 1.05rem;
   margin: 0;
   max-width: 34rem;
+}
+
+.hero p.hero-status {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  letter-spacing: .12em;
+  color: var(--text-3);
+  margin-top: 1.5rem;
 }
 
 .section-title {
@@ -242,7 +275,7 @@ main.wrap {
   content: counter(post, decimal-leading-zero);
   position: absolute;
   left: 0;
-  top: 1.75rem;
+  top: 1.65rem;
   font-family: var(--font-mono);
   font-size: .85rem;
   color: var(--text-3);
