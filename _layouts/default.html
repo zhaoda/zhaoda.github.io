@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% elsif site.lang %}{{ site.lang }}{% else %}en{% endif %}">
+<html lang="{% if page.lang %}{{ page.lang }}{% elsif site.lang %}{{ site.lang }}{% else %}zh{% endif %}">
   <head>
     {% include head.html %}
     {% seo %}
     {% feed_meta %}
   </head>
   <body>
+    <a class="skip-link" href="#main">跳到正文</a>
     {% include header.html %}
-    <main>
+    <main id="main" class="wrap">
       {{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
     </main>
     {% if page.path contains '_posts' %}
