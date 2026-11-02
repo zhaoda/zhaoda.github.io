@@ -3,18 +3,29 @@ layout: default
 ---
 
 <section class="hero">
-  <p class="hero-statusline"><span class="status-dot" aria-hidden="true"></span> System Online · Agent Fleet Active · Est. 2009</p>
-  <p class="hero-eyebrow">// AI · AGENT · DEV TOOLS</p>
-  <h1>代码、<em>智能体</em>与人<span class="cursor" aria-hidden="true">▊</span></h1>
-  <p>一名程序员的个人博客，记录 AI、AI Agent 与编程工具的实战思考，每日一篇。</p>
-  <p class="hero-stats">已发布 {{ site.posts.size }} 篇 · 每日更新 · <a href="/feed.xml">RSS 订阅</a></p>
+  <div class="hero-main">
+    <p class="hero-eyebrow">// AI · AGENT · DEV TOOLS</p>
+    <h1>代码、<em>智能体</em>与人<span class="cursor" aria-hidden="true">▊</span></h1>
+    <p>一名程序员的个人博客，记录 AI、AI Agent 与编程工具的实战思考，每日一篇。</p>
+    <p class="hero-stats">已发布 {{ site.posts.size }} 篇 · 每日更新 · <a href="/feed.xml">RSS 订阅</a></p>
+  </div>
+  <aside class="hero-panel" aria-label="系统面板">
+    <p class="hero-panel-title">Console // 系统面板</p>
+    <ul>
+      <li><span>Status</span><b><span class="status-dot" aria-hidden="true"></span>Online</b></li>
+      <li><span>Fleet</span><b>Active</b></li>
+      <li><span>Posts</span><b>{{ site.posts.size }}</b></li>
+      <li><span>Updated</span><b>{{ site.posts.first.date | date: '%Y-%m-%d' }}</b></li>
+      <li><span>Mode</span><b>Daily</b></li>
+    </ul>
+  </aside>
 </section>
 
 <section aria-labelledby="latest-heading">
   <h2 class="section-title" id="latest-heading">最新文章</h2>
   <ol class="post-list">
     {% for post in site.posts %}
-      <li>
+      <li{% if forloop.first %} class="featured"{% endif %}>
         <article>
           <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
           <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -28,7 +39,7 @@ layout: default
   </ol>
 </section>
 
-<section aria-labelledby="about-heading">
+<section class="about" aria-labelledby="about-heading">
   <h2 class="section-title" id="about-heading">关于</h2>
   <p>{{ site.description }}</p>
   <h3>链接</h3>
