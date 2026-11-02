@@ -11,6 +11,7 @@ layout: default
 </noscript>
 <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
   <header class="post-header">
+    <p class="post-kicker">Log Entry</p>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%Y年%m月%d日' }}</time>
       {% assign chars = content | strip_html | strip_newlines | size %}
